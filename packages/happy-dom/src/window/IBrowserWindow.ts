@@ -87,6 +87,7 @@ import StorageEvent from '../event/events/StorageEvent.js';
 import SubmitEvent from '../event/events/SubmitEvent.js';
 import MessageEvent from '../event/events/MessageEvent.js';
 import MessagePort from '../event/MessagePort.js';
+import MessageChannel from '../event/MessageChannel.js';
 import Screen from '../screen/Screen.js';
 import Storage from '../storage/Storage.js';
 import NodeFilter from '../tree-walker/NodeFilter.js';
@@ -256,6 +257,7 @@ export default interface IBrowserWindow extends IEventTarget, INodeJSGlobal {
 	readonly SubmitEvent: typeof SubmitEvent;
 	readonly MessageEvent: typeof MessageEvent;
 	readonly MessagePort: typeof MessagePort;
+	readonly MessageChannel: typeof MessageChannel;
 	readonly ProgressEvent: typeof ProgressEvent;
 	readonly MediaQueryListEvent: typeof MediaQueryListEvent;
 	readonly ClipboardEvent: typeof ClipboardEvent;

@@ -48,6 +48,7 @@ import TouchEvent from '../event/events/TouchEvent.js';
 import Touch from '../event/Touch.js';
 import EventTarget from '../event/EventTarget.js';
 import MessagePort from '../event/MessagePort.js';
+import MessageChannel from '../event/MessageChannel.js';
 import { URLSearchParams } from 'url';
 import URL from '../url/URL.js';
 import Location from '../url/Location.js';
@@ -334,6 +335,7 @@ export default class BrowserWindow extends EventTarget implements IBrowserWindow
 	public readonly CSSStyleDeclaration = CSSStyleDeclaration;
 	public readonly EventTarget = EventTarget;
 	public readonly MessagePort = MessagePort;
+	public readonly MessageChannel = MessageChannel;
 	public readonly DataTransfer = DataTransfer;
 	public readonly DataTransferItem = DataTransferItem;
 	public readonly DataTransferItemList = DataTransferItemList;
